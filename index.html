@@ -13,6 +13,7 @@
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
@@ -59,7 +60,7 @@
             <div class="row">
               <div class="col-lg-12 satisfaction-header-bg">
                 <h1 class="satisfaction__header">Customer Satisfaction is our main priority</h1>
-                <button type="button" class="btn btn-secondary">Learn More</button>
+                <button type="button" class="btn btn-secondary" id="header__btn" onclick="popup()">Learn More</button>
               </div>
 
               <p class="satisfaction__para center">If you’re looking for high quality and personal service for you or your business, you’ve come to the right place.  At Alpha Consulting &amp; Tax, Inc. we’ll give you the attention and personal service you’ve come to expect and enjoy. We offer the best in tax consulting for individual needs as well as any business need. Alpha Consulting &amp; Tax, Inc. has been located in business for over 15 years and always strives to provide our clients with the best consulting available so they leave assured that we put their best interest first.</p>
@@ -140,8 +141,9 @@
                 <h3>Contact Us</h3>
                 <address>17525 Ventura Blvd. #312, Encino, CA 91316</address>
                 <a href="tel: 818-784-2525">Phone: 818-784-2525</a>
+                <div id="map"></div>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-6 contact__col_right">
                 <form>
                   <div class="form-group">
                     <label for="usr">Name:</label>
@@ -165,6 +167,9 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBmnSJKfjQL3VX4WM8fSwwr2bw-_5ZMik&callback=initMap">
+    </script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
